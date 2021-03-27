@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HashTable
 {
-    class MyMapNode<K, V>
+    public class MyMapNode<K, V>
     {
         private readonly int size;
         private readonly LinkedList<KeyValue<K, V>>[] items;
@@ -20,7 +20,7 @@ namespace HashTable
             LinkedList<KeyValue<K, V>> linkedList = GetLinkedList(position);
             KeyValue<K, V> item = new KeyValue<K, V>() { Key = key, Value = value };
             linkedList.AddLast(item);
-        }
+        }       
 
         public void Remove(K key)
         {
