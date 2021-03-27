@@ -34,6 +34,8 @@ namespace HashTable
             Console.WriteLine("2nd index value: " + hash2);
             string hash17 = hash.Get("17");
             Console.WriteLine("17th index value: " + hash17);
+            hash.Remove("17");
+            Console.WriteLine("17th index value removed.. ");
             Console.ReadKey();
         }
     }
